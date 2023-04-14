@@ -2,6 +2,7 @@ class Candidate
   attr_reader :name,
               :party,
               :vote
+        
 
   def initialize(data)
     @name = data[:name]
@@ -15,5 +16,8 @@ class Candidate
 
   def vote_for!
     @vote += 1
+  end
+
+  def register_candidate!
   end
 end
